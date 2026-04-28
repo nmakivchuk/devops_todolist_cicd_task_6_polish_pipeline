@@ -13,7 +13,11 @@ on:
         description: 'Environment to deploy to'
         required: true
         type: choice
-        options: ['dev', 'staging', 'production']
+        options:
+          - windows-3.8
+          - windows-3.9
+          - ubuntu-3.8
+          - ubuntu-3.9
       message:
         description: 'Message to include in the deployment'
         required: false
